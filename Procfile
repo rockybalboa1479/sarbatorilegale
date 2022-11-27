@@ -1,0 +1,1 @@
+web: gunicorn sarbatorilegale.wsgi --log-file -
