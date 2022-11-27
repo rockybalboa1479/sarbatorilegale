@@ -1,0 +1,14 @@
+{% extends "calendr/base.html" %}
+
+{% block content %}
+<div class="main">     
+    <form method="POST"> 
+        <div class="container">
+            <!-- Security token by Django -->
+            {% csrf_token %}             
+                      
+        </div>
+    </form> 
+</div> 
+
+{% endblock content %}
