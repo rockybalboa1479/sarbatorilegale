@@ -1,5 +1,6 @@
 {% extends "calendr/base.html" %}
 
+
 {% block content %}
 <div class="main">     
     <form method="POST"> 
@@ -7,7 +8,7 @@
             <!-- Security token by Django -->
             {% csrf_token %}             
             <div class="ui container">
-                <h1>Sarut la printesa mea, Alexuta mea, iubirea mea cea mai mare</h1>              
+                {{ calendar }}
             </div>
         </div>
     </form> 

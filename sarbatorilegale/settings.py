@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-i=p3iq+8-m^y@d5rvdi!_zfr57nyg^g$o0obbpsjdr1my14xwb
 
 # SECURITY WARNING: don't run with debug turned on in production!
 #DEBUG = True
-DEBUG = False
+DEBUG = True
                                                                                                                                 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'sarbatorilegale.com', 'http://sarbatorilegale.com', 'https://sarbatorilegale.com', 'sarbatorilegale-production.up.railway.app', 'www.sarbatorilegale.com', 'http://www.sarbatorilegale.com', 'https://www.sarbatorilegale.com']
 
@@ -122,6 +122,10 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+
+]
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
